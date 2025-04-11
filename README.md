@@ -147,8 +147,3 @@ DAX for dynamic measures, filters, titles
 USERELATIONSHIP for inactive relationships
 
 Bookmarks, Tooltips, Slicers
-
-
-
-If you have suggestions or would like to contribute to this project, feel free to raise an issue or submit a pull request!
-
