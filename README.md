@@ -1,149 +1,82 @@
 Uber Trip Analysis Dashboard - Power BI Project
 
-📄 Project Overview
+📄 Overview
 
-This Power BI project analyzes Uber trip data to extract insights related to booking trends, revenue, trip efficiency, and operational metrics. It consists of three dashboards: Overview Analysis, Time Analysis, and Details Tab, providing stakeholders with actionable intelligence to drive decision-making.
+This Power BI project analyzes Uber trip data to reveal booking trends, revenue, and trip efficiency across various dimensions. It consists of three dashboards: Overview, Time Analysis, and Details Tab.
 
-📈 Dashboard 1: Overview Analysis
+📈 Dashboard 1: Overview
 
-🔢 KPI Metrics:
-
-Total Bookings - Total trips booked in the selected time period.
-
-Total Booking Value - Total revenue generated from bookings.
-
-Average Booking Value - Average fare per trip.
-
-Total Trip Distance - Sum of all trip distances.
-
-Average Trip Distance - Average distance traveled per trip.
-
-Average Trip Time - Mean duration of trips.
-
-✅ Expected Outcomes:
-
-Detect patterns in ride bookings and revenue generation.
-
-Analyze trip efficiency by distance and duration.
-
-Compare trip and revenue metrics across different periods.
-
-Optimize pricing and improve service strategies.
-
-📊 Charts & Features:
-
-Measure Selector (Disconnected Table):
+Key KPIs:
 
 Total Bookings
 
 Total Booking Value
 
+Avg Booking Value
+
 Total Trip Distance
 
-Breakdowns by:
+Avg Trip Distance
 
-Payment Type (Card, Cash, Wallet, etc.)
+Avg Trip Time
 
-Trip Type (Day/Night)
+Features:
+
+Dynamic Measure Selector (Bookings, Revenue, Distance)
+
+Breakdowns by Payment Type and Trip Type
+
+Dynamic Title, Slicers, Tooltips
+
+Location & Vehicle Analysis:
+
+Frequent Pickup & Drop-off Points
+
+Farthest Trip
+
+Bookings by Location (Top 5)
+
+Preferred Vehicle by Pickup Location
 
 Enhancements:
 
-Dynamic Title (based on selected measure)
+Bookmarks (Data Details)
 
-Slicers for Date, City, and other filters
+Clear Filters Button
 
-Tooltips for additional info (avg values, etc.)
-
-🛳 Vehicle Type Analysis:
-
-Grid/Matrix view showing KPIs per vehicle type.
-
-Conditional formatting for high/low value indicators.
-
-Sort and filter capabilities for interactive insights.
-
-🌍 Location Analysis:
-
-Most Frequent Pickup Point
-
-Most Frequent Drop-off Point (using USERELATIONSHIP)
-
-Farthest Trip (based on maximum trip distance)
-
-Top 5 Locations by Total Bookings
-
-Most Preferred Vehicle by Location Pickup
-
-✨ Additional Enhancements:
-
-Bookmark: "Data Details"
-
-Clear Slicer Button
-
-Export Raw Data Button (via Power Automate or native export)
+Download Raw Data
 
 🗓 Dashboard 2: Time Analysis
 
-Analyzes ride trends across different time periods for operational efficiency.
+Visuals:
 
-🌐 Global Dynamic Measure (affects all visuals):
+Area Chart by 10-min Pickup Intervals
 
-Total Bookings
+Line Chart by Day Name
 
-Total Booking Value
-
-Total Trip Distance
-
-📊 Visualizations:
-
-Pickup Time (10-Min Intervals) - Area Chart
-
-Day Name - Line Chart
-
-Hour and Day - Heatmap (Matrix):
-
-Rows: Hours (0–23)
-
-Columns: Days (Mon–Sun)
-
-Values: Dynamic Measure
+Heatmap (Hour vs. Day) for Demand Trends
 
 🔍 Dashboard 3: Details Tab
 
-Detailed view with support for drill-through analysis.
+Drill-through from visuals to detailed trip records
 
-🔄 Drill-Through Features:
+Grid/Table visual with trip fields
 
-Right-click visuals to navigate to detailed data
+Bookmark to toggle full/filtered view
 
-Display trips by selected point (day/hour/location/etc.)
-
-🔹 Grid/Table Visual:
-
-Includes key trip fields (Trip ID, time, distance, fare, etc.)
-
-🗂 Bookmark: Full Data View
-
-Toggle between filtered drill-through and complete dataset.
-
-🔗 Data Model Summary
+🔗 Data Model
 
 Fact Table: Trip Details
 
-Dimension Tables:
+Dimension Tables: Location, Calendar, Vehicle, Payment
 
-Location Table (for Pickup/Dropoff locations)
+DAX measures, USERELATIONSHIP for inactive joins
 
-Calendar Table (for date-based slicing)
-
-Vehicle Table, Payment Table, etc.
-
-💡 Tools & Techniques
+💡 Tech Stack
 
 Power BI Desktop & Service
 
-DAX for dynamic measures, filters, titles
+DAX, Bookmarks, Tooltips, Slicers
 
-USERELATIONSHIP for inactive relationships
 
-Bookmarks, Tooltips, Slicers
+
