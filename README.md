@@ -148,15 +148,7 @@ USERELATIONSHIP for inactive relationships
 
 Bookmarks, Tooltips, Slicers
 
-🔧 How to Use This Repo
 
-Clone the repo
-
-Import the .pbix file into Power BI Desktop
-
-Refresh data and configure slicers/bookmarks
-
-✉ Contact & Contributions
 
 If you have suggestions or would like to contribute to this project, feel free to raise an issue or submit a pull request!
 
